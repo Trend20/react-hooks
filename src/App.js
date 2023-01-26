@@ -1,4 +1,5 @@
 import EffectHook from "./hooks/useEffect";
+import RefHook from "./hooks/useRef";
 import StateHook from "./hooks/useState";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <h3>Hooks</h3>
       <StateHook />
       <EffectHook />
+      <RefHook />
     </div>
   );
 }
