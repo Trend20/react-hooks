@@ -13,6 +13,18 @@ const StateHook = () =>{
     setCount(prevCount => prevCount + 1);
   }
 
+  // using useState when dealing with objects
+  const [isModalOpen, setIsModalOpen] = useState({
+    save: false,
+    discard: false,
+    edit: false
+  })
+
+  // updating the state object
+  const handleModalStateUpdate = () =>{
+    setIsModalOpen({...isModalOpen, save: true, discard: true, edit: true})
+  }
+
   return(
     <div>
       <h3>useState Hook</h3>
@@ -20,6 +32,8 @@ const StateHook = () =>{
         <button onClick={handleDecrement}>-</button>
         <p>{count}</p>
         <button onClick={handleIncrement}>+</button>
+
+        <button onClick={handleModalStateUpdate}>Modal State Update</button>
       </div>
     </div>
   )
