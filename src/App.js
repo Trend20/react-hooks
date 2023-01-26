@@ -1,3 +1,4 @@
+import EffectHook from "./hooks/useEffect";
 import StateHook from "./hooks/useState";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <div className="App">
       <h3>Hooks</h3>
       <StateHook />
+      <EffectHook />
     </div>
   );
 }
