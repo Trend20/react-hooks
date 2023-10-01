@@ -6,6 +6,7 @@ const RefHook = () => {
 
   useEffect(() =>{
     renderCount.current = renderCount.current + 1;
+    console.log(renderCount);
   })
   return (
     <div>

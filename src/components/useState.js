@@ -1,7 +1,15 @@
 import { useState } from "react";
+// import axios from 'axios';
 
 const StateHook = () =>{
   const [count, setCount] = useState(0);
+
+  const [users, setUsers] = useState([]);
+
+  // get all users 
+  const getUser = () =>{
+
+  }
 
   // decrement
   const handleDecrement = () =>{

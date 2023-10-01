@@ -1,6 +1,6 @@
-import EffectHook from "./hooks/useEffect";
-import RefHook from "./hooks/useRef";
-import StateHook from "./hooks/useState";
+import EffectHook from "./components/useEffect";
+import RefHook from "./components/useRef";
+import StateHook from "./components/useState";
 
 function App() {
   return (
